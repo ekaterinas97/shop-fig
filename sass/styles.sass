@@ -6,7 +6,111 @@
 .container
   max-width: 1140px
   margin: 0 auto
-
+img
+  max-width: 100%
+  height: auto
 .header
   background-color: #222
-  padding: 18px 0
+  position: relative
+.header-right
+  display: flex
+  align-items: center
+
+.header-inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: 75px
+
+.user-nav
+  list-style: none
+  display: flex
+  .user-link
+    display: block
+    margin-left: 33px
+
+.header-burger
+  display: block
+  position: relative
+  width: 32px
+  height: 23px
+  cursor: pointer
+  span
+    position: absolute
+    height: 2px
+    width: 100%
+    top: 10.5px
+    background-color: #e8e8e8
+
+.header-burger::before,
+.header-burger::after
+  content: ""
+  position: absolute
+  left: 0
+  height: 2px
+  background-color: #e8e8e8
+  width: 100%
+.header-burger::before
+  top: 0
+
+.header-burger::after
+  bottom: 0
+
+.burger-menu
+  display: none
+  background-color: #fff
+  position: absolute
+  right: 0
+  top: 75px
+  width: 164px
+  padding: 37px 34px
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.burger-menu.active
+  display: block
+.burger-menu-category
+  list-style: none
+  &-link
+    display: block
+    text-decoration: none
+    font-size: 14px
+    text-transform: uppercase
+    color: #F16D7F
+
+.burger-menu-subcategory
+  list-style: none
+  margin-bottom: 20px
+  &-item
+    margin-top: 12px
+  &-link
+    display: block
+    padding: 2px 20px
+    text-decoration: none
+    color: #6F6E6E
+
+.banner-section
+  background-color: #F1E4E6
+
+.banner-inner
+  display: flex
+  align-items: center
+.banner-left
+  margin-left: -230px
+.banner-right
+  margin-left: 60px
+  display: flex
+  .pink-brick
+    width: 12px
+    background-color: #F16D7F
+    margin-right: 16px
+.banner-text
+  font-size: 37px
+  font-weight: 700
+  color: #222
+  line-height: 34px
+  .text-bold
+    font-size: 48px
+    font-weight: 900
+    line-height: 58px
+  .text-pink
+    color: #F16D7F

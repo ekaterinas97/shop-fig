@@ -898,19 +898,25 @@ h1, h2, h3, h4, h5, h6
 .basket__content  
   display: flex
   justify-content: space-between
+.basket__left
+  max-width: 652px 
+  width: 100%
 .basket__item
   display: flex
-  max-width: 734px
   width: 100%
   box-shadow: 17px 19px 24px rgba(0, 0, 0,0.13 )
   margin-bottom: 40px
 .basket__item-info
   padding: 22px 97px 62px 31px
+  width: 100%
+  display: flex
+  flex-direction: column
 .basket__item-title
   font-size: 24px
   line-height: 29px
   color: #222222
   text-transform: uppercase
+  margin-bottom: auto
 .basket__img-container 
   max-width: 262px
   width: 100%
@@ -919,10 +925,23 @@ h1, h2, h3, h4, h5, h6
   width: auto
   height: 100%
   object-fit: cover
+.basket-description__list
+  margin: 0
 .basket-description__row
   display: flex
+  margin-bottom: 14px
+  align-items: center
+  &:last-of-type
+    margin-bottom: 0
+.basket-description__row dt
+  color: #575757
 .basket-description__row dd
-  margin-left: 0
+  color: #6F6E6E
+  margin-left: 8px
+dd.basket__item-price
+  font-size: 22px
+  line-height: 26px
+  color: #EF5B70
 .basket__buttons
   display: flex
   justify-content: space-between
@@ -1012,6 +1031,9 @@ h1, h2, h3, h4, h5, h6
     color: #F16D7F
     margin-left: 24px
 
+ 
+// MEDIA QUERIES
+
 @media screen and ( max-width: 1126px )
   .advantages__inner
     justify-content: center
@@ -1026,8 +1048,6 @@ h1, h2, h3, h4, h5, h6
     width: 100%
   .basket__left
     width: 80%
-  .basket__item
-    max-width: 100%
   .delivery__form
     display: flex
     justify-content: space-around
@@ -1127,6 +1147,8 @@ h1, h2, h3, h4, h5, h6
   .offer__item,
   .offer__item-long
     width: 75%
+  .basket__item-title
+    margin-bottom: 42px
   
 
 @media screen and ( max-width: 576px )
@@ -1167,6 +1189,8 @@ h1, h2, h3, h4, h5, h6
     width: 100%
     margin-bottom: 20px
 @media screen and ( max-width: 425px )
+  .basket .container
+    padding: 0 8px
   .intro__text
     font-size: 20px
     line-height: 24px
@@ -1205,3 +1229,8 @@ h1, h2, h3, h4, h5, h6
     line-height: 12px
   .products-more
     padding-bottom: 64px
+  .basket
+    padding-top: 39px
+  .basket__item-title 
+    font-size: 16px
+    line-height: 19px

@@ -880,8 +880,6 @@ h1, h2, h3, h4, h5, h6
 .pagination .page-prev::before,
 .pagination .page-next::before
   display: block
-  // width: 8px
-  // height: 14px
 .pagination .page-prev::before
   content: url('../images/page-arrow-left.svg')
 .pagination .page-next::before
@@ -890,7 +888,10 @@ h1, h2, h3, h4, h5, h6
   color: #F26376
 
 // BASKET PAGE
-
+.category.shopping-cart
+  padding: 60px 0
+.category__title.shopping-cart__title
+  margin-bottom: 0
 .basket
   padding-top: 96px
   padding-bottom: 128px
@@ -899,7 +900,7 @@ h1, h2, h3, h4, h5, h6
   justify-content: space-between
 .basket__item
   display: flex
-  max-width: 652px
+  max-width: 734px
   width: 100%
   box-shadow: 17px 19px 24px rgba(0, 0, 0,0.13 )
   margin-bottom: 40px
@@ -910,12 +911,14 @@ h1, h2, h3, h4, h5, h6
   line-height: 29px
   color: #222222
   text-transform: uppercase
-.basket__img-container
-  width: 262px
+.basket__img-container 
+  max-width: 262px
+  width: 100%
 .basket__img
   max-width: 100%
   width: auto
   height: 100%
+  object-fit: cover
 .basket-description__row
   display: flex
 .basket-description__row dd
@@ -923,6 +926,10 @@ h1, h2, h3, h4, h5, h6
 .basket__buttons
   display: flex
   justify-content: space-between
+  & .basket__btn
+    margin-right: 48px
+    &:last-of-type
+      margin-right: 0
 .basket__btn
   background-color: #fff
   border: 1px solid #A4A4A4
@@ -1015,11 +1022,20 @@ h1, h2, h3, h4, h5, h6
   .basket__content
     align-items: center
     flex-direction: column
-  .basket__right, .basket__left
+  .basket__right,
     width: 100%
+  .basket__left
+    width: 80%
+  .basket__item
+    max-width: 100%
   .delivery__form
     display: flex
     justify-content: space-around
+  .delivery__address
+    margin-right: 15px
+    margin-bottom: 0
+  .basket__buttons
+    margin-bottom: 64px
 @media screen and ( max-width: 992px )
   .products__item
     width: calc((100% - 20px*2)/3)
@@ -1088,11 +1104,19 @@ h1, h2, h3, h4, h5, h6
     justify-content: space-between
   .delivery__address
     margin-right: 15px
-@media screen and ( max-width: 710px )
+  .basket__left
+    width: 100%
+  .basket__buttons
+    justify-content: center
+@media screen and ( max-width: 756px )
   .delivery__form
-    flex-wrap: wrap
+    flex-direction: column
   .delivery__address
     max-width: 100%
+    margin-bottom: 48px
+  .delivery__total
+    width: 100%
+    text-align: center
 
 @media screen and ( max-width: 700px )
   .intro__inner
@@ -1111,6 +1135,15 @@ h1, h2, h3, h4, h5, h6
     width: 100%  
   .add-to-cart
     top: 100px  
+  .basket__buttons
+    margin-bottom: 48px
+  .basket__buttons .basket__btn
+    font-size: 12px
+    margin-right: 10px
+  .basket
+    padding-bottom: 96px
+  .basket__item-info
+    padding: 13px 53px 37px 17px
 @media screen and ( max-width: 500px )
   .products
     justify-content: center
@@ -1125,6 +1158,14 @@ h1, h2, h3, h4, h5, h6
     margin-right: 18px
   .dropdown__title
     font-size: 12px
+@media screen and ( max-width: 476px )
+  .basket__buttons
+    flex-direction: column
+    align-items: center
+  .basket__buttons .basket__btn
+    margin-right: 0
+    width: 100%
+    margin-bottom: 20px
 @media screen and ( max-width: 425px )
   .intro__text
     font-size: 20px

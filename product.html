@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1a1f78895e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
-    <title>Главная страница</title>
+    <title>Страница товара</title>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                             <a class="profile" href="#"></a>
                         </div>
                         <div class="header-icons__item cart-block">
-                            <a class="cart" href="cart.html"></a>
+                            <a class="cart" href="#"></a>
                             <p class="cart-count">2</p>
                         </div>
                     </div>
@@ -118,94 +119,99 @@
             </nav>
         </div>
     </header>
-    <section class="intro">
+    <section class="category">
         <div class="container">
-            <div class="intro__inner">
-                <div class="intro__text">
-                    <p class="big-text">THE BRAND</p>OF LUXERIOUS <span class="color-text">FASHION</span>
+            <div class="category__inner">
+                <h2 class="category__title">New Arrivals</h2>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li>
+                            <a href="#" class="breadcrumb__link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#" class="breadcrumb__link">MEN</a>
+                        </li>
+                        <li class="active">
+                            <span aria-current="page">NEW ARRIVALS</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="product__slider-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper product__slider">
+                    <!-- Slides -->
+                    <div class="swiper-slide product__slide">
+                        <div class="product__img-container">
+                            <img src="images/slide-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide product__slide">
+                        <div class="product__img-container">
+                            <img src="images/slide-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide product__slide">
+                        <div class="product__img-container">
+                            <img src="images/slide-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="product__info">
+            <div class="container">
+                <div class="product__content">
+                    <div class="product__content-container">
+                        <div class="product__collection">women collection</div>
+                        <h4 class="product__title">MOSCHINO CHEAP AND CHIC</h4>
+                        <div class="product__description-container">
+                            <p class="product__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional
+                                portals. </p>
+                        </div>
+                        <span class="product__price">$561</span>
+                        <div class="line"></div>
+                        <form action="" class="product__filters">
+                            <div class="product__filters-container">
+                                <select name="" id="color" class="chooser color-chooser">
+                                    <option value="">choose color</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="red">Red</option>
+                                </select>
+                                <select name="" id="color" class="chooser size-chooser">
+                                    <option value="">choose size</option>
+                                    <option value="xs">xs</option>
+                                    <option value="sm">sm</option>
+                                    <option value="xl">xl</option>
+                                </select>
+                                <select name="" id="color" class="chooser quantity-chooser">
+                                    <option value="">quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="product__btn">Add to Cart</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="offer">
+    <section class="products-more">
         <div class="container">
-            <div class="offer__inner">
-                <div class="offer__item">
-                    <a href="#" class="offer__link">
-                        <img src="images/offer-1.jpg" alt="" class="offer__img">
-                        <div class="offer__text">
-                            <p>30% OFF</p>
-                            <span>FOR WOMEN</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="offer__item">
-                    <a href="#" class="offer__link">
-                        <img src="images/offer-2.jpg" alt="" class="offer__img">
-                        <div class="offer__text">
-                            <p>HOT DEAL</p>
-                            <span>FOR Man</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="offer__item">
-                    <a href="#" class="offer__link">
-                        <img src="images/offer-3.jpg" alt="" class="offer__img">
-                        <div class="offer__text">
-                            <p>NEW ARRIVALS</p>
-                            <span>FOR kids</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="offer__item-long">
-                    <a href="#" class="offer__link offer__link-long">
-                        <img src="images/offer-4.jpg" alt="" class="offer__img">
-                        <div class="offer__text">
-                            <p>LUXIROUS & TRENDY</p>
-                            <span>ACCESORIES</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="featured">
-        <div class="container">
-            <h3 class="featured__title">Fetured Items</h3>
-            <p class="featured__text">Shop for items based on what we featured in this week</p>
-            <div class="products">
+            <div class="products products-more__inner">
                 <div class="products__item">
                     <a href="product.html" class="products__link">
                         <div class="products__img">
-                            <img src="images/product-1.jpg" alt="">
+                            <img src="images/product-4.jpg" alt="">
                         </div>
-                        <div class="products__info">
-                            <div class="products__heading">ELLERY X M'O CAPSULE</div>
-                            <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
-                            <div class="products__price">$52.00</div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart">
-                        <a href="#" class="add-btn">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="products__item">
-                    <a href="#" class="products__link">
-                        <img src="images/product-2.jpg" alt="" class="products__img">
-                        <div class="products__info">
-                            <div class="products__heading">ELLERY X M'O CAPSULE</div>
-                            <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi</div>
-                            <div class="products__price">$52.00</div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart">
-                        <a href="#" class="add-btn">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a href="#" class="products__link">
-                        <img src="images/product-3.jpg" alt="" class="products__img">
                         <div class="products__info">
                             <div class="products__heading">ELLERY X M'O CAPSULE</div>
                             <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
@@ -218,7 +224,9 @@
                 </div>
                 <div class="products__item">
                     <a href="product.html" class="products__link">
-                        <img src="images/product-4.jpg" alt="" class="products__img">
+                        <div class="products__img">
+                            <img src="images/product-3.jpg" alt="">
+                        </div>
                         <div class="products__info">
                             <div class="products__heading">ELLERY X M'O CAPSULE</div>
                             <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
@@ -230,8 +238,10 @@
                     </div>
                 </div>
                 <div class="products__item">
-                    <a href="#" class="products__link">
-                        <img src="images/product-5.jpg" alt="" class="products__img">
+                    <a href="product.html" class="products__link">
+                        <div class="products__img">
+                            <img src="images/product-6.jpg" alt="">
+                        </div>
                         <div class="products__info">
                             <div class="products__heading">ELLERY X M'O CAPSULE</div>
                             <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
@@ -242,62 +252,6 @@
                         <a href="#" class="add-btn">Add to Cart</a>
                     </div>
                 </div>
-                <div class="products__item">
-                    <a href="#" class="products__link">
-                        <img src="images/product-6.jpg" alt="" class="products__img">
-                        <div class="products__info">
-                            <div class="products__heading">ELLERY X M'O CAPSULE</div>
-                            <div class="products__descr">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
-                            <div class="products__price">$52.00</div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart">
-                        <a href="#" class="add-btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="featured__box">
-                <a href="catalog.html" class="featured__btn">Browse All Product</a>
-            </div>
-        </div>
-    </section>
-    <section class="advantages">
-        <div class="container">
-            <div class="advantages__inner">
-                <div class="advantages__item">
-                    <div class="advantages__img-container">
-                        <img src="images/icon-1.svg" alt="" class="advantages__img">
-                    </div>
-                    <div class="advantages__info">
-                        <div class="advantages__title">Free Delivery</div>
-                        <div class="advantages__descr">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__img-container">
-                        <img src="images/icon-2.svg" alt="" class="advantages__img">
-                    </div>
-                    <div class="advantages__info">
-                        <div class="advantages__title">Sales & discounts</div>
-                        <div class="advantages__descr">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__img-container">
-                        <img src="images/icon-3.svg" alt="" class="advantages__img">
-                    </div>
-                    <div class="advantages__info">
-                        <div class="advantages__title">Quality assurance</div>
-                        <div class="advantages__descr">
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -351,6 +305,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

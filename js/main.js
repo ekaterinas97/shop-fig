@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict";
 let searchBtn = document.querySelector('.search__icon');
 let searchBlock = document.querySelector('.search');
@@ -39,11 +38,3 @@ filterCatalogBtn.addEventListener('click', function() {
 filterCatalogBtnMobile.addEventListener('click', function() {
     filterCatalogBlock.classList.toggle('show-filter');
 });
-=======
-let burgerBtn = document.querySelector('.header-burger');
-let headerMenu = document.querySelector('.burger-menu');
-burgerBtn.addEventListener('click', function(){
-  headerMenu.classList.toggle('active');
-});
-console.log(burgerBtn);
->>>>>>> 906c59858cc86e8b459c1f7b66b04cd15b4c7a60
